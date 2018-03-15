@@ -1,0 +1,29 @@
+import numpy as np
+import math
+
+a = np.zeros((2,2,2))
+rows, cols, deep = a.shape
+print(rows, cols, deep)
+a[0,0,0] = 99
+print(a)
+a_sliced = a[:, :, 0]
+print(a_sliced)
+
+
+
+'''
+img = np.array([[0,1,2],
+			   [2,3,4],
+			   [5,6,7]])
+
+img_min         = np.amin(img)
+img_max         = np.amax(img)
+rows, cols      = img.shape
+factor	  		= 255/(img_max-img_min)
+
+transformed_img = np.zeros((rows, cols), dtype=np.uint8)
+for index, x in np.ndenumerate(img):
+		transformed_img[index] = math.floor((x-img_min)*factor)
+
+print(transformed_img)
+'''
