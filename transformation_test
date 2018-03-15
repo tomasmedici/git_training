@@ -9,8 +9,8 @@ print(a)
 a_sliced = a[:, :, 0]
 print(a_sliced)
 
-def adder(a, b)
-  return a + b
+def adder_and_squarer(a, b)
+  return (a + b)*2
 
 '''
 img = np.array([[0,1,2],
